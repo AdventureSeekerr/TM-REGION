@@ -1,39 +1,24 @@
 @font-face{
-
 font-family: 'OpenSans-Regular';
-
-src: url('../TM-Region/fonts/Open_Sans/OpenSans-Regular.ttf');
-
-url('../TM-Region/fonts/Open_Sans/OpenSans-Regular.ttf') format('ttf');
-
+src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
 font-weight: normal;
-
+font-display: swap;
 font-style: normal;
 }
 
 @font-face{
-
 font-family: 'OpenSans-ExtraBold';
-
-src: url('../TM-Region/fonts/Open_Sans/OpenSans-ExtraBold.ttf');
-
-url('../TM-Region/fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('ttf');
-
-font-weight: extra-bold;
-
+src: url('./fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+fodnt-weight: extra-bold;
+font-display: swap;
 font-style: normal;
 }
 
 @font-face{
-
 font-family: 'OpenSans-Bold';
-
-src: url('../TM-Region/fonts/Open_Sans/OpenSans-Bold.ttf');
-
-url('../TM-Region/fonts/Open_Sans/OpenSans-Bold.ttf') format('ttf');
-
+src: url('./fonts/Open_Sans/OpenSans-Bold.ttf');
 font-weight: bold;
-
+font-display: swap;
 font-style: normal;
 }
 
@@ -256,7 +241,9 @@ ol li {
 	background-color: #d90000;
 	color: white;
 }
-
+#vehicle-1{
+	cursor: pointer;
+}
 .hr-gray {
 	margin: 0;
 	margin-top: -4px;
@@ -369,4 +356,22 @@ footer p {
 	font-size: 14px;
 	text-align: center;
 	margin-top: 5px;
+}
+.carImg{
+	background-color: #b80000;
+}
+.main-image{
+	display: block;
+}
+.vehicle-1{
+	cursor: pointer;
+}
+
+.description-title{
+	font-family: "OpenSans-Bold";
+    font-size: 16px;
+}
+.description-text{
+	font-size: 14px;
+	font-family: "OpenSans-Regular";
 }

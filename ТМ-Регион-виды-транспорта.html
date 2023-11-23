@@ -1,50 +1,62 @@
 <!DOCTYPE HTML>
+
 <head>
-<meta charset="utf-8">
-  <title>ТМ-Регион</title>
+	<meta charset="utf-8">
+	<title>ТМ-Регион</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrapper">
-<header>
-	<div><img class="head" src="header.jpg" alt="1"></div>
-<ul>
-	<li><a href="ТМ-Регион.html"><img id="logo" src="TM logo.svg" alt="1"></a></li>
-	<li><a href="Регионы.html">Регионы</a></li>
-	<li><a href="ТМ-Регион-Виды-транспорта.html">Виды транспорта</a></li>
-	<li><a href="Портфолио.html">Портфолио</a></li>
-	<li><a href="Контакты.html">Контакты</a></li>
-</ul>
-<hr></hr>
-</header>
-<div class="article">
-<div class="sort-of-vehicles">
-<a href="ТМ-Регион-виды-транспорта.html"><img id="vehicle-0" src="./vehicles/01-01.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-KIA-Azia.html"><img id="vehicle-1" src="./vehicles/01-02.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ГАЗ-3307.html"><img id="vehicle-1" src="./vehicles/01-03.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ГАЗ-3302.html"><img id="vehicle-1" src="./vehicles/01-04.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-Ford-Transit.html"><img id="vehicle-1" src="./vehicles/01-05.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ЛИАЗ-5256.html"><img id="vehicle-1" src="./vehicles/01-06.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-MAN-SL-202.html"><img id="vehicle-1" src="./vehicles/01-07.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-KTM-3.html"><img id="vehicle-1" src="./vehicles/01-08.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-Tatra-3.html"><img id="vehicle-1" src="./vehicles/01-09.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ЗИУ-9.html"><img id="vehicle-1" src="./vehicles/01-10.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ГАЗ-322132-ГАЗель.html"><img id="vehicle-1" src="./vehicles/01-11.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ПАЗ-Аврора.html"><img id="vehicle-1" src="./vehicles/01-12.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ПАЗ-4234.html"><img id="vehicle-1" src="./vehicles/01-13.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ЛИАЗ-677.html"><img id="vehicle-1" src="./vehicles/01-14.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ВАЗ-21014.html"><img id="vehicle-1" src="./vehicles/01-15.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-ПАЗ-3205.html"><img id="vehicle-1" src="./vehicles/01-16.svg" alt="1"></a>
-<a href="ТМ-Регион-виды-транспорта-Renault-Logan.html"><img id="vehicle-1" src="./vehicles/01-17.svg" alt="1"></a>
-</div>
-<img id="#" src="./vehicles/01.jpg" alt="1">
 
-<hr class="hr-gray"></hr>
-</div>
-</div>
-<footer>
-<div class="copyright"><p>@2008-2021</p></div>
-<div class="footer-info"><div>
-</footer>
+<body>
+	<div class="wrapper">
+		<header>
+			<div><img class="head" src="header.jpg" alt="1"></div>
+			<ul>
+				<li><a href="ТМ-Регион.html"><img id="logo" src="TM logo.svg" alt="1"></a></li>
+				<li><a href="Регионы.html">Регионы</a></li>
+				<li><a href="ТМ-Регион-Виды-транспорта.html">Виды транспорта</a></li>
+				<li><a href="Портфолио.html">Портфолио</a></li>
+				<li><a href="Контакты.html">Контакты</a></li>
+			</ul>
+			<hr>
+			</hr>
+		</header>
+		<div class="article">
+			<div class="sort-of-vehicles">
+				<img class="vehicle-1" src="./vehicles/01-01.svg" onclick="showImg(`./vehicles/01.jpg`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-02.svg" onclick="showImg(`./vehicles/02.jpg`, `KIA AZIA`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-03.svg" onclick="showImg(`./vehicles/03.jpg`, `ГАЗ 3307`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-04.svg" onclick="showImg(`./vehicles/04.jpg`, `ГАЗ 3302`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-05.svg" onclick="showImg(`./vehicles/05.jpg`, `Ford Transit`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-06.svg" onclick="showImg(`./vehicles/06.jpg`, `ЛИАЗ 5256`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-07.svg" onclick="showImg(`./vehicles/07.jpg`, `MAN SL 202`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-08.svg" onclick="showImg(`./vehicles/08.jpg`, `КТМ 3`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-09.svg" onclick="showImg(`./vehicles/09.jpg`, `Татра 3`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-10.svg" onclick="showImg(`./vehicles/10.jpg`, `ЗИУ 9`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-11.svg" onclick="showImg(`./vehicles/11.jpg`, `ГАЗ 332132 ГАЗель`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-12.svg" onclick="showImg(`./vehicles/12.jpg`, `ПАЗ Аврора`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-13.svg" onclick="showImg(`./vehicles/13.jpg`, `ПАЗ 4234`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-14.svg" onclick="showImg(`./vehicles/14.jpg`, `ЛИАЗ 677`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-15.svg" onclick="showImg(`./vehicles/15.jpg`, `ВАЗ 21014`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-16.svg" onclick="showImg(`./vehicles/16.jpg`, `ПАЗ 3205`)" alt="1"></a>
+				<img class="vehicle-1" src="./vehicles/01-17.svg" onclick="showImg(`./vehicles/17.jpg`, `Renault Logan`)" alt="1"></a>
+			</div>
+			<img src="" alt="" class="main-image">
+			<div class="description">
+				<h2 class="description-title"></h2>
+				<p class="description-text"></p>
+			</div>
+			<hr class="hr-gray">
+			</hr>
+		</div>
+	</div>
+	<footer>
+		<div class="copyright">
+			<p>@2008-2021</p>
+		</div>
+		<div class="footer-info">
+			<div>
+	</footer>
+	<script src="./script.js"></script>
 </body>
+
 </html>
