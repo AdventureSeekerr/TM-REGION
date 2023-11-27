@@ -1,25 +1,25 @@
-@font-face{
-font-family: 'OpenSans-Regular';
-src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
-font-weight: normal;
-font-display: swap;
-font-style: normal;
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("./fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-weight: normal;
+	font-display: swap;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'OpenSans-ExtraBold';
-src: url('./fonts/Open_Sans/OpenSans-ExtraBold.ttf');
-fodnt-weight: extra-bold;
-font-display: swap;
-font-style: normal;
+@font-face {
+	font-family: "OpenSans-ExtraBold";
+	src: url("./fonts/Open_Sans/OpenSans-ExtraBold.ttf");
+	fodnt-weight: extra-bold;
+	font-display: swap;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'OpenSans-Bold';
-src: url('./fonts/Open_Sans/OpenSans-Bold.ttf');
-font-weight: bold;
-font-display: swap;
-font-style: normal;
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("./fonts/Open_Sans/OpenSans-Bold.ttf");
+	font-weight: bold;
+	font-display: swap;
+	font-style: normal;
 }
 
 body {
@@ -30,9 +30,9 @@ body {
 
 header {
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
-    width: 760px;
+	width: 760px;
 }
 
 #logo {
@@ -56,14 +56,14 @@ li {
 }
 
 a {
-height: 20px;
-text-align: center;
-text-decoration: none;
-font-family: "OpenSans-Bold";
-padding: 0;
-margin-top: 10px;
-font-size: 14px;
-color: #c1c1c1;
+	height: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: "OpenSans-Bold";
+	padding: 0;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #c1c1c1;
 }
 
 a:hover {
@@ -93,9 +93,9 @@ H2 {
 .article {
 	position: relative;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
-    width: 760px;
+	width: 760px;
 	flex: 1 0 auto;
 }
 
@@ -161,36 +161,37 @@ ol li {
 	text-align: center;
 }
 
-.left, .right {
+.left,
+.right {
 	height: 20px;
 	width: 15px;
 	margin: 100px 50px;
 }
 
-.left:hover, .right:hover {
+.left:hover,
+.right:hover {
 	color: #b80000;
 }
-
 
 .photo {
 	height: 210px;
 	width: 346px;
 }
 
-.left, .right, .photo {
+.left,
+.right,
+.photo {
 	float: left;
 }
 
-
-
 .dropdown-content {
 	display: none;
-    position: absolute;
+	position: absolute;
 	top: -5px;
 	left: 170px;
-    background-color: #f1f1f1;
-    min-width: 210px;
-    z-index: 1;
+	background-color: #f1f1f1;
+	min-width: 210px;
+	z-index: 1;
 	padding: nopadding;
 	margin: 0;
 }
@@ -204,7 +205,7 @@ ol li {
 	background: none;
 	margin: 0;
 	padding: nopadding;
-	}
+}
 
 .portfolio li:hover .dropdown-content a {
 	white-space: nowrap;
@@ -241,7 +242,7 @@ ol li {
 	background-color: #d90000;
 	color: white;
 }
-#vehicle-1{
+#vehicle-1 {
 	cursor: pointer;
 }
 .hr-gray {
@@ -261,6 +262,7 @@ ol li {
 
 .map {
 	margin-top: 30px;
+	position: relative;
 }
 
 .description {
@@ -277,9 +279,9 @@ ol li {
 form {
 	margin-top: 50px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
-    width: 760px;
+	width: 760px;
 }
 
 form p {
@@ -296,7 +298,9 @@ textarea {
 	height: 80px;
 }
 
-input, textarea, .button {
+input,
+textarea,
+.button {
 	display: block;
 	margin: 2px auto;
 	font-family: "OpenSans-Bold";
@@ -344,9 +348,9 @@ footer {
 	height: 30px;
 	clear: both;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding: 0;
-    width: 760px;
+	width: 760px;
 	flex: 0 0 auto;
 }
 
@@ -357,21 +361,25 @@ footer p {
 	text-align: center;
 	margin-top: 5px;
 }
-.carImg{
+.carImg {
 	background-color: #b80000;
 }
-.main-image{
+.main-image {
 	display: block;
 }
-.vehicle-1{
+.vehicle-1 {
 	cursor: pointer;
 }
 
-.description-title{
+.description-title {
 	font-family: "OpenSans-Bold";
-    font-size: 16px;
+	font-size: 16px;
 }
-.description-text{
+.description-text {
 	font-size: 14px;
 	font-family: "OpenSans-Regular";
 }
+.regions {
+	position: relative;
+}
+

@@ -1,6 +1,5 @@
 let carImages = document.querySelectorAll(".vehicle-1");
 
-
 carImages.forEach(function (image) {
     image.addEventListener("click", function () {
         carImages.forEach(function (img) {
@@ -25,4 +24,4 @@ function showImg(pathImg, title){
     };
     mainImg.src = pathImg;
 };
- 
+
