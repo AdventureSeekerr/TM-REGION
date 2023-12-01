@@ -383,3 +383,59 @@ footer p {
 	position: relative;
 }
 
+.map-subject {
+	font-weight: 700;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.map-subject-1 {
+	top: 208px;
+	left: 137px;
+}
+.map-subject-2 {
+	top: 180px;
+	left: 40px;
+}
+.map-subject-3 {
+	top: 300px;
+	left: 160px;
+}
+.map-subject-4 {
+	top: 250px;
+	left: 20px;
+}
+.map-subject-5 {
+	top: 370px;
+	left: -40px;
+}
+.map-subject-6 {
+	top: 260px;
+	left: 254px;
+}
+.map-subject-7 {
+	top: 310px;
+	left: 350px;
+}
+.map-subject-8 {
+	top: 210px;
+	left: 480px;
+
+}
+.regions__img{
+	display: block;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.regions{
+	position: relative;
+}
+.main-map{
+	width: 100%;
+	height: 403px;
+	border: 1px solid #000;
+}
