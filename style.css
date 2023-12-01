@@ -375,3 +375,7 @@ footer p {
 	font-size: 14px;
 	font-family: "OpenSans-Regular";
 }
+.map-subject{
+	font-family: "OpenSans-Bold";
+	cursor: pointer;
+}
