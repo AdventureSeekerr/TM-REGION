@@ -1,39 +1,57 @@
 <!DOCTYPE HTML>
+
 <head>
-<meta charset="utf-8">
-  <title>Портфолио</title>
+	<meta charset="utf-8">
+	<title>Портфолио</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="wrapper">
-<header>
-	<div><img class="head" src="header.jpg" alt="1"></div>
-<ul>
-	<li><a href="ТМ-Регион.html"><img id="logo" src="TM logo.svg" alt="1"></a></li>
-	<li><a href="Регионы.html">Регионы</a></li>
-	<li><a href="ТМ-Регион-Виды-транспорта.html">Виды транспорта</a></li>
-	<li><a href="Портфолио.html">Портфолио</a></li>
-	<li><a href="Контакты.html">Контакты</a></li>
-</ul>
-<hr></hr>
-</header>
-<div class="article">
-<div class="map">
-	<img class="map-full" src="./russia_map.svg" alt="1">
-	<div class="map-subject">Северо-Западный ФО</div>
-	<div class="map-subject">Центральный ФО</div>
-	<div class="map-subject">Приволжский ФО</div>
-	<div class="map-subject">Южный ФО</div>
-	<div class="map-subject">Северо-Кавказский ФО</div>
-	<div class="map-subject">Уральский ФО</div>
-	<div class="map-subject">Сибирский ФО</div>
-	<div class="map-subject">Дальневосточный ФО</div>
-</div>
-</div>
-</div>
-<footer>
-<div class="copyright"><p>@2008-2021</p></div>
-<div class="footer-info"></div>
-</footer>
+	<div class="wrapper">
+		<header>
+			<div><img class="head" src="header.jpg" alt="1"></div>
+			<ul>
+				<li><a href="ТМ-Регион.html"><img id="logo" src="TM logo.svg" alt="1"></a></li>
+				<li><a href="Регионы.html">Регионы</a></li>
+				<li><a href="ТМ-Регион-Виды-транспорта.html">Виды транспорта</a></li>
+				<li><a href="Портфолио.html">Портфолио</a></li>
+				<li><a href="Контакты.html">Контакты</a></li>
+			</ul>
+			<hr>
+			</hr>
+		</header>
+		<div class="article">
+			<div class="map">
+				<img src="./map_full.svg" alt="" class="main-map">
+				<div class="map-subject map-subject-1" onmouseover="showRegions(`./regions/Северо-Западный-ФО.svg`, `map-subject-1`)">Северо-Западный ФО</div>
+				<div class="map-subject map-subject-2" onmouseover="showRegions(`./regions/Центральный-ФО.svg`, `map-subject-2`)">Центральный ФО</div>
+				<div class="map-subject map-subject-3" onmouseover="showRegions(`./regions/Приволжский-ФО.svg`, `map-subject-3`)">Приволжский ФО</div>
+				<div class="map-subject map-subject-4" onmouseover="showRegions(`./regions/Южный-ФО.svg`, `map-subject-4`)">Южный ФО</div>
+				<div class="map-subject map-subject-5" onmouseover="showRegions(`./regions/Северо-Кавказский-ФО.svg`, `map-subject-5`)">Северо-Кавказский ФО</div>
+				<div class="map-subject map-subject-6" onmouseover="showRegions(`./regions/Уральский-ФО.svg`, `map-subject-6`)">Уральский ФО</div>
+				<div class="map-subject map-subject-7" onmouseover="showRegions(`./regions/Сибирский-ФО.svg`, `map-subject-7`)">Сибирский ФО</div>
+				<div class="map-subject map-subject-8" onmouseover="showRegions(`./regions/Дальневосточный-ФО.svg`, `map-subject-8`)">Дальневосточный ФО</div>
+				<!-- <img src="./svg-map/Северо-Западный-ФО.svg" alt="" class="regions__img regions__img-1">
+				<img src="./svg-map/Центральный-ФО.svg" alt="" class="regions__img regions__img-2">
+				<img src="./svg-map/Южный-ФО.svg" alt="" class="regions__img regions__img-3">
+				<img src="./svg-map/Северо-Кавказский-ФО.svg" alt="" class="regions__img regions__img-4">
+				<img src="./svg-map/Уральский-ФО.svg" alt="" class="regions__img regions__img-5">
+				<img src="./svg-map/Приволжский-ФО.svg" alt="" class="regions__img regions__img-6">
+				<img src="./svg-map/Сибирский-ФО.svg" alt="" class="regions__img regions__img-7">
+				<img src="./svg-map/Дальневосточный-ФО.svg" alt="" class="regions__img regions__img-8"> -->
+			</div>
+		 
+	 
+
+		</div>
+	</div>
+	<footer>
+		<div class="copyright">
+			<p>@2008-2021</p>
+		</div>
+		<div class="footer-info"></div>
+	</footer>
+	<script src="./script.js"></script>
 </body>
+
 </html>
