@@ -25,12 +25,15 @@ function showImg(pathImg, title){
     mainImg.src = pathImg;
 };
 
+const szFO = document.querySelectorAll(".cls-sz");
+const centrFO = document.querySelectorAll(".cls-cen");
+const privFO = document.querySelectorAll(".cls-priv");
+const usnFO = document.querySelectorAll(".cls-usn");
+const skFO = document.querySelectorAll(".cls-sk");
+const urFO = document.querySelectorAll(".cls-ur");
+const sbFO = document.querySelectorAll(".cls-sb");
+const dalFO = document.querySelectorAll(".cls-dal");
 
-const rusMap = document.querySelector(".main-map");
-
-function showRegions(svg, textClass){
-    rusMap.src = svg;
-    document.querySelector("." + textClass).addEventListener("mouseleave", () => {
-        rusMap.src = "./map_full.svg"
-    })
-};
+function showRegion(array){
+    
+}

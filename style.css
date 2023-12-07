@@ -384,6 +384,7 @@ footer p {
 }
 
 .map-subject {
+ 
 	font-weight: 700;
 	cursor: pointer;
 	position: absolute;
@@ -436,10 +437,11 @@ footer p {
 .main-map {
 	width: 100%;
 	height: 403px;
+	cursor: pointer;
 }
 .regions__img {
-	width: 100%;
-	height: 100%;
+	/* width: 100%;
+	height: 100%; */
 	position: absolute;
 }
 .regions__img-1 {
@@ -481,6 +483,14 @@ footer p {
 .regions__img-8 {
 	top: 0;
 	left: 233px;
-	opacity: 0;
+	opacity: 0.6;
+	border: 1px solid #000;
 	display: none;
+}
+.cls-1,
+.cls-2 {
+	fill: #828181;
+}
+.cls-1 {
+	fill-rule: evenodd;
 }
