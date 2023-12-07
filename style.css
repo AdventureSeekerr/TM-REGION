@@ -494,3 +494,6 @@ footer p {
 .cls-1 {
 	fill-rule: evenodd;
 }
+.russian-map svg{
+	cursor: pointer;
+}

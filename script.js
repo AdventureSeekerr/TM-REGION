@@ -35,5 +35,24 @@ const sbFO = document.querySelectorAll(".cls-sb");
 const dalFO = document.querySelectorAll(".cls-dal");
 
 function showRegion(array){
-    
-}
+    array.forEach(function(elements){
+        elements.addEventListener("mouseover", () => {
+            array.forEach(function(el){
+                el.style.fill = "#da0000"
+            });
+        });
+        elements.addEventListener("mouseout", ()=>{
+            array.forEach(function(el){
+                el.style.fill = "#828181"
+            });
+        });
+    });
+};
+showRegion(szFO);
+showRegion(centrFO);
+showRegion(privFO);
+showRegion(usnFO);
+showRegion(skFO);
+showRegion(urFO);
+showRegion(sbFO);
+showRegion(dalFO);
