@@ -91,7 +91,7 @@ function removeRegions(region, regionArray, descrRegion, transition) {
                     } else{
                         animation.classList.add(transition);
                     }
-                }, 0.3)
+                }, 0.1)
             });
             sloi1.style.height = "500px";
             regionArray.forEach((regions) => {
@@ -104,7 +104,7 @@ function removeRegions(region, regionArray, descrRegion, transition) {
                     } else{
                         regions.style.display = "none";
                     }
-                }, 0.3)
+                }, 0.1)
             });
             descrRegion.classList.add("info-region__active");
             setTimeout(() => {
@@ -115,7 +115,7 @@ function removeRegions(region, regionArray, descrRegion, transition) {
                 } else {
                     descrRegion.classList.add("info-region__active");
                 }
-            }, 0.3)
+            }, 0.1)
         });
     });
 }
