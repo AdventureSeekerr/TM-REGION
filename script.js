@@ -6,6 +6,7 @@ carImages.forEach(function (image) {
             img.classList.remove("carImg");
         });
         image.classList.add("carImg");
+
     });
 });
 
@@ -46,8 +47,8 @@ function showRegion(array) {
                 el.style.fill = "#c1c1c1"
             });
         });
-    });
 
+    });
 };
 showRegion(szFO);
 showRegion(centrFO);
@@ -78,49 +79,38 @@ const infoSib = document.querySelector(".info-region__sib");
 const infoDal = document.querySelector(".info-region__dal");
 const sloi1 = document.querySelector("#Слой_1");
 
+let cls1 = document.querySelectorAll(".cls-1");
+let cls2 = document.querySelectorAll(".cls-2");
+
+function animationCls(){
+    setTimeout(() => {
+        cls1.forEach((el) =>{
+            el.classList.toggle("cls-active")
+        });
+        cls2.forEach((el) =>{
+            el.classList.toggle("cls-active")
+        });
+    }, 600)
+}
+
 function removeRegions(region, regionArray, descrRegion, transition) {
     region.forEach((el) => {
         el.addEventListener("click", () => {
+            animationCls();
+            descrRegion.classList.toggle("info-region__active");
             region.forEach((animation) => {
-                animation.classList.add(transition);
-                setTimeout(() => {
-                    if (animation.classList.contains(transition)) {
-                        document.addEventListener("click", () => {
-                            animation.classList.remove(transition);
-                        })
-                    } else{
-                        animation.classList.add(transition);
-                    }
-                }, 0.3)
-            });
-            sloi1.style.height = "500px";
-            regionArray.forEach((regions) => {
-                regions.style.display = "none";
-                setTimeout(() => {
-                    if (regions.style.display = "none") {
-                        document.addEventListener("click", () => {
-                            regions.style.display = "block";
-                        })
-                    } else{
-                        regions.style.display = "none";
-                    }
-                }, 0.3)
-            });
-            descrRegion.classList.add("info-region__active");
-            setTimeout(() => {
-                if (descrRegion.classList.contains("info-region__active")) {
-                    document.addEventListener("click", () => {
-                        descrRegion.classList.remove("info-region__active");
-                    })
-                } else {
-                    descrRegion.classList.add("info-region__active");
+                animation.classList.toggle(transition);
+                sloi1.style.height = "auto";
+                if (animation.classList.contains(transition)) {
+                    sloi1.style.height = "500px";
                 }
-            }, 0.3)
+            });
+            regionArray.forEach((regions) => {
+                regions.classList.toggle("region-active")
+            });
         });
     });
 }
-
-
 
 removeRegions(szFO, onlySzFO, infoSz, "info-region__transition");
 removeRegions(centrFO, onlyCentrFO, infoCen, "info-region__transition-2");
