@@ -1,15 +1,20 @@
-let carImages = document.querySelectorAll(".vehicle-1");
+let carImages = document.querySelectorAll(".transport");
 
-carImages.forEach(function (image) {
-    image.addEventListener("click", function () {
-        carImages.forEach(function (img) {
-            img.classList.remove("carImg");
+carImages.forEach(function (svg) {
+    svg.addEventListener('click', function () {
+        carImages.forEach(function (s) {
+            s.classList.remove("carImg");
+            s.querySelectorAll(".cls-1").forEach(function (circle) {
+                circle.style.fill = "#b3b3b3";
+                
+            });
         });
-        image.classList.add("carImg");
-
+        svg.classList.add("carImg");
+        svg.querySelectorAll(".cls-1").forEach(function (circle) {
+            circle.style.fill = "#fff";
+        });
     });
 });
-
 
 let mainImg = document.querySelector(".main-image");
 let descrTitle = document.querySelector(".description-title");
@@ -82,13 +87,15 @@ const sloi1 = document.querySelector("#Слой_1");
 let cls1 = document.querySelectorAll(".cls-1");
 let cls2 = document.querySelectorAll(".cls-2");
 
-function animationCls(){
+function animationCls() {
     setTimeout(() => {
-        cls1.forEach((el) =>{
+        cls1.forEach((el) => {
             el.classList.toggle("cls-active")
+
         });
-        cls2.forEach((el) =>{
+        cls2.forEach((el) => {
             el.classList.toggle("cls-active")
+
         });
     }, 600)
 }
@@ -96,6 +103,7 @@ function animationCls(){
 function removeRegions(region, regionArray, descrRegion, transition) {
     region.forEach((el) => {
         el.addEventListener("click", () => {
+            el.classList.add("region-zindex");
             animationCls();
             descrRegion.classList.toggle("info-region__active");
             region.forEach((animation) => {
@@ -106,7 +114,8 @@ function removeRegions(region, regionArray, descrRegion, transition) {
                 }
             });
             regionArray.forEach((regions) => {
-                regions.classList.toggle("region-active")
+                regions.classList.toggle("region-active");
+                regions.classList.add("map-zindex")
             });
         });
     });
@@ -121,3 +130,5 @@ removeRegions(urFO, onlyUrFO, infoUr, "info-region__transition-6");
 removeRegions(sbFO, onlySbFO, infoSib, "info-region__transition-7");
 removeRegions(dalFO, onlyDalFO, infoDal, "info-region__transition-8");
 
+
+$('.carousel').slick();

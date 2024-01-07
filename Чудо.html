@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Портфолио</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -58,17 +60,19 @@
 				<img class="portfolio-map-full" src="map_full.svg" alt="1">
 				<p>Нижний Новгород Самара Казань Пенза Йошкар-Ола Киров Сыктывкар</p>
 			</div>
-			<div class="carousel">
-				<h2>Городской транспорт</h2>
-				<img class="left" src="left.svg" alt="1">
-				<img class="photo" src="ZIU-9.jpg" alt="1">
-				<img class="right" src="right.svg" alt="1">
-			</div>
-			<div class="carousel" id="corporate">
+			<div class="carousel-container">
+				<h2 class="carousel-container__title">Городской транспорт</h2>
+				<div class="carousel">
+					<!-- <img class="left" src="left.svg" alt="1"> -->
+					<img class="photo" src="ZIU-9.jpg" alt="1">
+					<!-- <img class="right" src="right.svg" alt="1"> -->
+				</div>
 				<h2>Корпоративный транспорт</h2>
-				<img class="left" src="left.svg" alt="1">
-				<img class="photo" src="GAZ.jpg" alt="1">
-				<img class="right" src="right.svg" alt="1">
+				<div class="carousel" id="corporate">
+					<!-- <img class="left" src="left.svg" alt="1"> -->
+					<img class="photo" src="GAZ.jpg" alt="1">
+					<!-- <img class="right" src="right.svg" alt="1"> -->
+				</div>
 			</div>
 		</div>
 		<footer>
@@ -78,6 +82,8 @@
 			<div class="footer-info"></div>
 		</footer>
 	</div>
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>	<script src="./script.js"></script> -->
 </body>
 
 </html>
